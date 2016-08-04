@@ -1,0 +1,245 @@
+body {
+  background: #674172; }
+
+.container {
+  width: 90%;
+  background: white;
+  margin: 0 auto;
+  height: 782px; 
+-webkit-box-shadow: -2px 0px 6px 0px #000, 2px 0px 6px 0px #000;
+-moz-box-shadow: -2px 0px 6px 0px #000, 2px 0px 6px 0px #000;
+box-shadow: -2px 0px 6px 0px #000, 2px 0px 6px 0px #000;}
+
+header {
+  position: relative;
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  -webkit-box-shadow: -8px 10px 6px -6px #000, 8px 10px 6px -6px #000;;
+  -moz-box-shadow: -8px 10px 6px -6px #000, 8px 10px 6px -6px #000;
+  box-shadow: -8px 10px 6px -6px #000, 8px 10px 6px -6px #000;}
+  header img {
+    width: 140px; }
+
+nav {
+  display: inline-block; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  height: 35px;
+  float: left;
+  padding: 0px 15px 10px; }
+  li a {
+    text-decoration: none;
+    color: #ccc;
+    font: 18px/1 Helvetica, Verdana, sans-serif;
+    
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+
+li a:hover {
+  color: #4B77BE; }
+
+li.active a {
+  font-weight: bold;
+  color: #333; }
+
+  .hero {
+    margin-top: 2px;
+    background: url(red.jpg) no-repeat center;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+  }
+
+  .hero h3, .hero h1 {
+    position: absolute;
+    color: white;
+    padding-left: 40px;
+
+  }
+
+  .hero h3 {
+    bottom: 25%;
+  }
+
+  .hero h1 {
+    bottom: 10%;
+    font-size: 4em;
+  }
+
+.favicons {
+  float: right;
+  margin: 25px 75px;
+}
+
+li.circle-icon {
+  border-radius: 50%;
+  display: block;
+  height: 16px;
+  padding: 8px;
+  margin-left: 30px;
+  width: 16px;
+}
+
+.reddit {
+  background: url(reddit.png);
+  background-size: cover;
+}
+
+.game {
+  background: url(game.ico);
+  background-size: cover;
+}
+
+.plus {
+  background: url(plus.ico);
+  background-size: cover;
+}
+
+.field-tip {
+  position:relative;
+  cursor:pointer;
+}
+ .tip-content-message {
+  position:absolute;
+  top:-10px; 
+  right:9999px;
+  width:200px;
+  margin-right:-220px; 
+  padding:10px;
+  background: white;
+  -webkit-box-shadow:2px 2px 5px #aaa;
+     -moz-box-shadow:2px 2px 5px #aaa;
+          box-shadow:2px 2px 5px #aaa;
+  opacity:0;
+  -webkit-transition:opacity 250ms ease-out;
+     -moz-transition:opacity 250ms ease-out;
+      -ms-transition:opacity 250ms ease-out;
+       -o-transition:opacity 250ms ease-out;
+          transition:opacity 250ms ease-out;
+} 
+.tip-content-message:before {
+      content:' ';
+      position:absolute;
+      top:-8px;
+      left:45%;
+      width:0;
+      height:0;
+      margin-top:-8px;
+      border:8px solid transparent;
+      border-bottom-color: white;
+  }
+  .field-tip:hover .tip-content-message {
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+    position:absolute;
+    top: 70px;
+      right:90px;
+      opacity:1;
+  }
+
+.notification-inbox:after {
+  content:'8';
+  text-align: center;
+  font-size: 9px;
+  padding: 2px;
+  position:absolute;
+  background-color: #36D7B7;
+  border-radius: 50%;
+  top: -12px;
+  left: 57px;
+  height: 9px;
+  width: 9px;
+
+}
+
+.notif-footer {
+  background-color: #ccc;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  border-radius: 0px 0px 5px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.message {
+  height: 70px;
+  
+}
+
+hr {
+  border-bottom: 1px solid #ccc;
+}
+
+.message p {
+  font-size: 16px;
+}
+
+.message-image {
+  width: 25%;
+  padding-top: 20px;
+  float: left;
+}
+
+p.message-text {
+  margin-top: -20px;
+  width: 80%;
+  float: left;
+  font-size: 14px;
+}
+
+p.message-date {
+  padding-top: 5px;
+  font-size: 10px;
+}
+
+.circle-icon-notif {
+  border-radius: 50%;
+  display: block;
+  height: 16px;
+  padding: 8px;
+  width: 16px;
+  margin-left: 5px;
+}
+
+.circle-icon-notif {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.overlay{ 
+ background:rgba(0,0,0,.75);
+ text-align:center;
+ opacity:0;
+ width: 100%;
+ height: 100%;
+ -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;
+-ms-transition:opacity .25s ease;
+-o-transition:opacity .25s ease;
+transition:opacity .25s ease;}
+
+.hero:hover .overlay {
+  opacity:0.5;
+}
+
+/*# sourceMappingURL=main.css.map */
